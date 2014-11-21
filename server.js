@@ -1,8 +1,11 @@
 var app = require('express')();
 var server = require('http').createServer(app);
 
+app.set('view engine', 'ejs');
+app.set('views',__dirname + '/views');
+
 app.get('/', function(req, res) {
-	res.send("<h1>Hello world!</h1>")
+	res.render('index')
 });
 
 server.listen(3000, function() {
