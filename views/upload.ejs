@@ -1,0 +1,11 @@
+<h1 id="welcome">Welcome to video app!</h1>
+<h2>Upload your video here:</h2>
+<form method=post enctype="multipart/form-data" action="#">
+	Video to upload: <input id="newupload" type="file" name="newupload"><br>
+	<input type="submit" value="Submit">
+</form>
+<div id="video"></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/jquery.js"></script>
+<script src="/interface.js"></script>
